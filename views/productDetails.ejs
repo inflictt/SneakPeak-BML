@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= typeof title !== 'undefined' ? title : 'Product Details - SneakPeak' %></title>
+    <meta name="description" content="Shop authentic sneakers from verified retailers. Compare prices and find your perfect pair.">
+    <meta name="keywords" content="sneakers, authentic sneakers, SneakPeak, footwear, athletic shoes">
+    <link rel="stylesheet" href="/css/productDetails.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+</head>
+<body>
+    <div class="main-container">
+        <%- include('partials/_header') %>
+
+        <!-- Main Content -->
+        <main class="product-section">
+            <!-- Product Images -->
+            <div class="image-gallery">
+                <div class="image-row">
+                    <img src="/assets/images/img_palermo_side.png" alt="Puma Palermo side view" class="product-image">
+                    <img src="/assets/images/img_palermo_top.png" alt="Puma Palermo top view" class="product-image">
+                </div>
+                <div class="image-row">
+                    <img src="/assets/images/img_palermo_rear.png" alt="Puma Palermo rear view" class="product-image">
+                    <img src="/assets/images/img_palermo_rear_394x394.png" alt="Puma Palermo bottom view" class="product-image">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <!-- Product Header -->
+                <div class="product-header">
+                    <div class="brand-name">Puma</div>
+                    <h1 class="product-title">Palermo</h1>
+                    <div class="product-subtitle">Hyperlink Blue-Flame Flicker-Gum</div>
+                    <div class="price-section">
+                        <div class="price-label">From</div>
+                        <div class="price">₹5,249</div>
+                    </div>
+                </div>
+
+                <!-- Size Selection -->
+                <div class="size-section">
+                    <h3 class="section-subtitle">Select Size</h3>
+                    <div class="size-selector">
+                        <button class="size-option" data-size="7">UK 7</button>
+                        <button class="size-option" data-size="8">UK 8</button>
+                        <button class="size-option" data-size="9">UK 9</button>
+                        <button class="size-option" data-size="10">UK 10</button>
+                        <button class="size-option" data-size="11">UK 11</button>
+                    </div>
+                    <div class="selection-hint" id="sizeHint">Please select your size first</div>
+                </div>
+
+                <!-- Vendor Selection -->
+                <div class="vendors-section disabled">
+                    <h3 class="section-subtitle">Available Vendors</h3>
+                    <div class="retailer-cards">
+                        <div class="retailer-card" data-vendor="SoleTrade Mumbai">
+                            <div class="retailer-info">
+                                <div class="retailer-header">
+                                    <div class="retailer-name">SoleTrade Mumbai</div>
+                                    <div class="rating-section">
+                                        <img src="/assets/images/img_vector_teal_400.svg" alt="Star rating" class="rating-icon">
+                                        <span class="rating-text">4.4</span>
+                                    </div>
+                                </div>
+                                <div class="retailer-price">₹5,249</div>
+                                <div class="verified-badge">
+                                    <img src="/assets/images/img_vector_teal_400_12x12.svg" alt="Verified" class="verified-icon">
+                                    <span class="verified-text">Verified Seller</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="retailer-card" data-vendor="Velocity Kicks">
+                            <div class="retailer-info">
+                                <div class="retailer-header">
+                                    <div class="retailer-name">Velocity Kicks</div>
+                                    <div class="rating-section">
+                                        <img src="/assets/images/img_vector_teal_400.svg" alt="Star rating" class="rating-icon">
+                                        <span class="rating-text">4.6</span>
+                                    </div>
+                                </div>
+                                <div class="retailer-price">₹5,999</div>
+                                <div class="verified-badge">
+                                    <img src="/assets/images/img_vector_teal_400_12x12.svg" alt="Verified" class="verified-icon">
+                                    <span class="verified-text">Verified Seller</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="retailer-card" data-vendor="StepUp Gurgaon">
+                            <div class="retailer-info">
+                                <div class="retailer-header">
+                                    <div class="retailer-name">StepUp Gurgaon</div>
+                                    <div class="rating-section">
+                                        <img src="/assets/images/img_vector_teal_400.svg" alt="Star rating" class="rating-icon">
+                                        <span class="rating-text">4.1</span>
+                                    </div>
+                                </div>
+                                <div class="retailer-price">₹6,999</div>
+                                <div class="verified-badge">
+                                    <img src="/assets/images/img_vector_teal_400_12x12.svg" alt="Verified" class="verified-icon">
+                                    <span class="verified-text">Verified Seller</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selection-hint" id="vendorHint">Select size to see vendors</div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="wishlist-btn" id="wishlistBtn" disabled>
+                        <img src="/assets/images/img_component_18.svg" alt="Add to wishlist" width="24" height="24">
+                    </button>
+                    <button class="add-to-cart-btn" id="addToCartBtn" disabled>Add to Cart</button>
+                </div>
+
+                <div class="shipping-info">
+                    <span>✓ Free Shipping</span>
+                    <span>✓ Free Returns</span>
+                </div>
+
+                <!-- Product Details -->
+                <div class="product-details">
+                    <h2 class="details-title">Product Details</h2>
+                    <div class="details-text">
+                        <p>The Palermo brings back the timeless appeal of a terrace classic with a vintage silhouette and premium materials.</p>
+                        <ul>
+                            <li><strong>Style:</strong> 402693_07</li>
+                            <li><strong>Color:</strong> Hyperlink Blue-Flame Flicker-Gum</li>
+                            <li><strong>Material:</strong> Suede & Leather</li>
+                            <li><strong>Fit:</strong> Regular</li>
+                            <li><strong>Profile:</strong> Low Boot</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <%- include('partials/_footer') %>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="/js/productDetails.js"></script>
+</body>
+</html>

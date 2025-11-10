@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= typeof title !== 'undefined' ? title : 'SneakPeak - Discover Authentic Sneakers from Local Sellers | Premium Marketplace' %></title>
+  <meta name="description" content="Find authentic sneakers from verified local sellers on SneakPeak. Browse new arrivals from Nike, Adidas, Puma & more. Secure checkout, ratings & reviews guaranteed.">
+  <meta name="keywords" content="sneakers, authentic sneakers, local sellers, Nike, Adidas, Puma, Asics, sneaker marketplace, verified sellers">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SneakPeak - Discover Authentic Sneakers from Local Sellers">
+  <meta property="og:description" content="Find authentic sneakers from verified local sellers. Browse new arrivals from top brands with secure checkout and ratings.">
+  
+  <link rel="stylesheet" href="/css/index.css">
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Frishitsa4553back.builtwithrocket.new&amp;_be=https%3A%2F%2Fapplication.rocket.new&amp;_v=0.1.8"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+</head>
+<body>
+  <%- include('partials/_header') %>
+
+  <main>
+    <section class="hero-section" aria-label="Hero banner">
+    <div class="hero-overlay">
+      <img src="/assets/images/img_rectangle_10.png">
+    </div>
+    
+    <div class="hero-content">
+        <h1 class="hero-title"><b>Discover Sneakers Locally.</b></h1>
+        <p class="hero-subtitle">Find your grail from hundreds of local vendors. All verified, all in one place.</p>
+        <button class="hero-button">Browse all Sneakers</button>
+    </div>
+</section>
+
+    <section class="new-arrivals" aria-label="New arrivals">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-title-container">
+            <h2 class="section-title">New Arrivals</h2>
+            <div class="title-underline"></div>
+          </div>
+          <a href="#" class="view-all">View all</a>
+        </div>
+        
+        <div class="slider-container" style="position: relative;">
+          <!-- Auto-sliding carousel with indicators -->
+          <div class="products-slider" id="productsSlider">
+            <!-- Products will be dynamically loaded here -->
+            <div class="loading-message" style="text-align: center; padding: 40px; color: #666;">
+              Loading products...
+            </div>
+          </div>
+          
+          <!-- Slider indicators -->
+          <div class="slider-indicators" id="sliderIndicators" style="display: flex; justify-content: center; gap: 8px; margin-top: 20px;">
+            <!-- Indicators will be dynamically generated -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands-section" aria-label="Featured brands">
+      <div class="section-container">
+        <div class="section-title-container">
+          <h2 class="section-title">Brands</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <div class="brands-grid">
+          <article class="brand-card">
+            <img src="/assets/images/img_rectangle_23.png" alt="Adidas brand showcase" class="brand-image" style="opacity: 1;">
+            <div class="brand-overlay">
+              <img src="/assets/images/img_rectangle_25.png" alt="Adidas logo" class="brand-logo" style="opacity: 1;">
+            </div>
+          </article>
+          
+          <article class="brand-card">
+            <img src="/assets/images/img_rectangle_23_500x320.png" alt="Nike brand showcase" class="brand-image" style="opacity: 1;">
+            <div class="brand-overlay">
+              <img src="/assets/images/img_rectangle_25_108x102.png" alt="Nike logo" class="brand-logo" style="opacity: 1;">
+            </div>
+          </article>
+          
+          <article class="brand-card">
+            <img src="/assets/images/img_rectangle_23_1.png" alt="Puma brand showcase" class="brand-image" style="opacity: 1;">
+            <div class="brand-overlay">
+              <img src="/assets/images/img_rectangle_25_1.png" alt="Puma logo" class="brand-logo" style="opacity: 1;">
+            </div>
+          </article>
+          
+          <article class="brand-card">
+            <img src="/assets/images/img_rectangle_23_2.png" alt="New Balance brand showcase" class="brand-image" style="opacity: 1;">
+            <div class="brand-overlay">
+              <img src="/assets/images/img_rectangle_25_2.png" alt="New Balance logo" class="brand-logo" style="opacity: 1;">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section" aria-label="Platform features">
+      <div class="section-container">
+        <div class="features-grid">
+          <article class="feature-item">
+            <div class="feature-icon-container">
+              <img src="/assets/images/img_vector_blue_a700.svg" alt="Authenticity guarantee icon" class="feature-icon" style="opacity: 1;">
+              <h3 class="feature-title">100% Authentic</h3>
+            </div>
+            <p class="feature-description">See all local sellers offering your size, with ratings and prices.</p>
+          </article>
+          
+          <article class="feature-item">
+            <div class="feature-icon-container">
+              <img src="/assets/images/img_vector_blue_a700_58x48.svg" alt="Local sellers icon" class="feature-icon" style="opacity: 1;">
+              <h3 class="feature-title">Direct from Local Sellers</h3>
+            </div>
+            <p class="feature-description">See all local sellers offering your size, with ratings and prices.</p>
+          </article>
+          
+          <article class="feature-item">
+            <div class="feature-icon-container">
+              <img src="/assets/images/img_vector_blue_a700_48x58.svg" alt="Secure checkout icon" class="feature-icon" style="opacity: 1;">
+              <h3 class="feature-title">Secure Checkout</h3>
+            </div>
+            <p class="feature-description">See all local sellers offering your size, with ratings and prices.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-label="Call to action">
+      <div class="section-container">
+        <h2 class="cta-title">Ready to find your Grails?</h2>
+        <button class="cta-button">Sign up Now</button>
+      </div>
+    </section>
+  </main>
+
+  <%- include('partials/_footer') %>
+  <script src="/js/api.js"></script>
+  <script src="/js/product.js"></script>
+  <script src="/js/index.js"></script>
+  <script src="/js/cart.js"></script>
+</body>
+</html>

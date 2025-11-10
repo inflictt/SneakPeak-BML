@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= typeof title !== 'undefined' ? title : 'About Us - SneakPeak' %></title>
+  <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+  <%- include('partials/_header') %>
+
+  <main>
+    <section class="hero-section" aria-label="About SneakPeak">
+      <div class="hero-content">
+        <h1 class="hero-title">About SneakPeak</h1>
+        <p class="hero-subtitle">Connecting sneaker enthusiasts with trusted local sellers since 2020</p>
+      </div>
+    </section>
+
+    <section class="about-section" aria-label="Our story">
+      <div class="section-container">
+        <div class="about-content">
+          <div class="about-text">
+            <div class="section-title-container">
+              <h2 class="section-title">Our Story</h2>
+              <div class="title-underline"></div>
+            </div>
+            <p>Founded in 2020, SneakPeak emerged from a simple observation: sneaker enthusiasts were struggling to find authentic products from trusted local sellers. We set out to bridge this gap by creating a platform that connects buyers with verified local retailers.</p>
+            
+            <p>Our mission is to empower both sneaker lovers and small businesses by providing a secure, transparent marketplace where authenticity is guaranteed and community thrives.</p>
+            
+            <div class="about-features">
+              <div class="about-feature">
+                <div class="feature-icon">✓</div>
+                <p class="feature-text">Every product is verified by our authentication team</p>
+              </div>
+              <div class="about-feature">
+                <div class="feature-icon">✓</div>
+                <p class="feature-text">Support local businesses and the sneaker community</p>
+              </div>
+              <div class="about-feature">
+                <div class="feature-icon">✓</div>
+                <p class="feature-text">Secure transactions with buyer protection</p>
+              </div>
+              <div class="about-feature">
+                <div class="feature-icon">✓</div>
+                <p class="feature-text">Transparent seller ratings and reviews</p>
+              </div>
+            </div>
+            
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-number">10K+</div>
+                <div class="stat-label">Verified Products</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Local Sellers</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">50K+</div>
+                <div class="stat-label">Happy Customers</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Cities Served</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-image">
+            Placeholder for team photo
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section" aria-label="Our team">
+      <div class="section-container">
+        <div class="section-title-container">
+          <h2 class="section-title">Our Team</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="team-image">JS</div>
+            <h3 class="team-name">Rishit Rebant</h3>
+            <p class="team-role">Founder & CEO</p>
+            <p class="team-bio">Passionate sneaker collector with 10+ years in the industry. Founded SneakPeak to solve authentication challenges.</p>
+          </div>
+          
+          <div class="team-member">
+            <div class="team-image">SR</div>
+            <h3 class="team-name">Prerit Shrivastava</h3>
+            <p class="team-role">Head of Authentication</p>
+            <p class="team-bio">Former sneaker store manager with expert knowledge in verifying authenticity across all major brands.</p>
+          </div>
+          
+          <div class="team-member">
+            <div class="team-image">MJ</div>
+            <h3 class="team-name">Saksham Lodha</h3>
+            <p class="team-role">Community Manager</p>
+            <p class="team-bio">Connects with our community of sellers and buyers to ensure the best experience for everyone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="values-section" aria-label="Our values">
+      <div class="section-container">
+        <div class="section-title-container">
+          <h2 class="section-title">Our Values</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-icon">A</div>
+            <h3 class="value-title">Authenticity</h3>
+            <p class="value-description">We guarantee that every product on our platform is 100% authentic, verified by our expert team.</p>
+          </div>
+          
+          <div class="value-item">
+            <div class="value-icon">C</div>
+            <h3 class="value-title">Community</h3>
+            <p class="value-description">We believe in supporting local sellers and building a trusted community of sneaker enthusiasts.</p>
+          </div>
+          
+          <div class="value-item">
+            <div class="value-icon">T</div>
+            <h3 class="value-title">Transparency</h3>
+            <p class="value-description">Clear pricing, honest seller ratings, and open communication are at the core of everything we do.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-label="Join our community">
+      <div class="section-container">
+        <h2 class="cta-title">Ready to join our community?</h2>
+        <button class="cta-button">Sign up Now</button>
+      </div>
+    </section>
+  </main>
+
+  <%- include('partials/_footer') %>
+
+  <script src="/js/about.js"></script>
+</body>
+</html>

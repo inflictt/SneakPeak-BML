@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= typeof title !== 'undefined' ? title : 'Shopping Cart | SneakPeak' %></title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <div class="main-container">
+
+        <main class="cart-container">
+            <h1>Shopping Cart</h1>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <div class="subtotal">
+                    <span>Subtotal:</span>
+                    <span class="subtotal-amount">₹0</span>
+                </div>
+                <div class="shipping">
+                    <span>Shipping:</span>
+                    <span>Free</span>
+                </div>
+                <div class="total">
+                    <span>Total:</span>
+                    <span class="total-amount">₹0</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </main>
+
+    </div>
+    <script src="/js/api.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>

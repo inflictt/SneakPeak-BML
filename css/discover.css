@@ -1,0 +1,383 @@
+/* Discover Page Specific Styles */
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #000000;
+  padding: 0 16px;
+  max-width: 940px;
+}
+
+.hero-title {
+  font-size: 32px;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+/* View All Link */
+.view-all {
+  font-size: 18px;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.view-all:hover {
+  color: #0066ff;
+}
+
+/* Product Slider */
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.slider-control {
+  background-color: #2d2d2d;
+  border-radius: 14px;
+  padding: 8px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.slider-control:hover {
+  background-color: #0066ff;
+  transform: scale(1.05);
+}
+
+.slider-control img {
+  width: 30px;
+  height: 30px;
+}
+
+.products-slider {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex: 1;
+}
+
+.products-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  flex-shrink: 0;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+}
+
+.product-info {
+  background-color: #f5f5f5;
+  padding: 8px;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+}
+
+.product-brand {
+  font-size: 10px;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 400;
+  color: #7d7d7d;
+  margin-bottom: 2px;
+}
+
+.product-name {
+  font-size: 20px;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+/* Discover Grid */
+.discover-section {
+  background-color: #ffffff;
+  padding: 64px 0;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.discover-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.discover-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.discover-content {
+  padding: 20px;
+}
+
+.discover-category {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0066ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.discover-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.discover-excerpt {
+  font-size: 14px;
+  color: #7d7d7d;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.discover-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0066ff;
+  transition: color 0.3s ease;
+}
+
+.discover-link:hover {
+  color: #0047b3;
+}
+
+.discover-link::after {
+  content: '→';
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.discover-link:hover::after {
+  transform: translateX(3px);
+}
+
+/* Filter Section */
+.filter-section {
+  background-color: #f5f5f5;
+  padding: 32px 0;
+}
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.filter-button {
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d2d2d;
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover, .filter-button.active {
+  background-color: #0066ff;
+  color: #ffffff;
+  border-color: #0066ff;
+}
+
+/* Interactive states */
+.view-all:focus {
+  outline: 2px solid #0066ff;
+  outline-offset: 2px;
+}
+
+/* Responsive media queries for Discover page */
+@media (min-width: 640px) {
+  .hero-section {
+    height: 60vh;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
+  }
+  
+  .view-all {
+    font-size: 20px;
+  }
+  
+  .product-card {
+    width: 300px;
+  }
+  
+  .product-image {
+    height: 220px;
+  }
+  
+  .product-brand {
+    font-size: 11px;
+  }
+  
+  .product-name {
+    font-size: 24px;
+  }
+  
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .discover-image {
+    height: 180px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    height: 70vh;
+  }
+  
+  .hero-title {
+    font-size: 56px;
+  }
+  
+  .hero-subtitle {
+    font-size: 17px;
+  }
+  
+  .view-all {
+    font-size: 22px;
+  }
+  
+  .product-card {
+    width: 310px;
+  }
+  
+  .product-image {
+    height: 240px;
+  }
+  
+  .product-brand {
+    font-size: 12px;
+  }
+  
+  .product-name {
+    font-size: 28px;
+  }
+  
+  .discover-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .discover-image {
+    height: 200px;
+  }
+  
+  .discover-title {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    height: 80vh;
+  }
+  
+  .hero-title {
+    font-size: 64px;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+  }
+  
+  .view-all {
+    font-size: 24px;
+  }
+  
+  .product-card {
+    width: 310px;
+  }
+  
+  .product-image {
+    height: 276px;
+    border-radius: 18px 18px 0 0;
+  }
+  
+  .product-brand {
+    font-size: 12px;
+  }
+  
+  .product-name {
+    font-size: 32px;
+  }
+  
+  .discover-image {
+    height: 220px;
+  }
+}

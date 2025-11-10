@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= typeof title !== 'undefined' ? title : 'Discover - SneakPeak' %></title>
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/discover.css">
+</head>
+<body>
+  <%- include('partials/_header') %>
+
+  <main>
+    <section class="hero-section" aria-label="Discover sneaker culture">
+      <div class="hero-content">
+        <h1 class="hero-title">Discover the Culture</h1>
+        <p class="hero-subtitle">Explore sneaker stories, styling tips, and community highlights</p>
+      </div>
+    </section>
+
+    <section class="filter-section" aria-label="Filter content">
+      <div class="section-container">
+        <div class="filter-container">
+          <button class="filter-button active">All</button>
+          <button class="filter-button">Care Guides</button>
+          <button class="filter-button">Style Tips</button>
+          <button class="filter-button">Brand Stories</button>
+          <button class="filter-button">Community</button>
+          <button class="filter-button">New Releases</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="discover-section" aria-label="Discover content">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-title-container">
+            <h2 class="section-title">Featured Stories</h2>
+            <div class="title-underline"></div>
+          </div>
+          <a href="#" class="view-all">View all</a>
+        </div>
+        
+        <div class="discover-grid">
+          <article class="discover-card">
+            <img src="https://images.unsplash.com/photo-1556906781-2a4128782aa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Sneaker care tips" class="discover-image">
+            <div class="discover-content">
+              <span class="discover-category">Care Guide</span>
+              <h3 class="discover-title">How to Keep Your Sneakers Looking Fresh</h3>
+              <p class="discover-excerpt">Learn the best practices for cleaning and maintaining your sneakers to extend their lifespan and keep them looking brand new.</p>
+              <a href="#" class="discover-link">Read more</a>
+            </div>
+          </article>
+          
+          <article class="discover-card">
+            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Sneaker history" class="discover-image">
+            <div class="discover-content">
+              <span class="discover-category">History</span>
+              <h3 class="discover-title">The Evolution of Sneaker Culture</h3>
+              <p class="discover-excerpt">From basketball courts to fashion runways, explore how sneakers became a global phenomenon and cultural statement.</p>
+              <a href="#" class="discover-link">Read more</a>
+            </div>
+          </article>
+          
+          <article class="discover-card">
+            <img src="https://images.unsplash.com/photo-1543512214-318c7553f230?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Sneaker styling" class="discover-image">
+            <div class="discover-content">
+              <span class="discover-category">Style Guide</span>
+              <h3 class="discover-title">5 Ways to Style Your Favorite Sneakers</h3>
+              <p class="discover-excerpt">Discover creative ways to incorporate your sneakers into various outfits, from casual to semi-formal looks.</p>
+              <a href="#" class="discover-link">Read more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="discover-section" aria-label="Featured sneakers">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-title-container">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="title-underline"></div>
+          </div>
+          <a href="/" class="view-all">View all</a>
+        </div>
+        
+        <div class="slider-container">
+          <button class="slider-control" id="prevBtn" aria-label="Previous products">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+          
+          <div class="products-slider" id="productsSlider">
+            <article class="product-card">
+              <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Puma Palermo sneakers" class="product-image">
+              <div class="product-info">
+                <p class="product-brand">Puma</p>
+                <h3 class="product-name">Palermo</h3>
+              </div>
+            </article>
+            
+            <article class="product-card">
+              <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Adidas Originals Samba OG sneakers" class="product-image">
+              <div class="product-info">
+                <p class="product-brand">Adidas Originals</p>
+                <h3 class="product-name">Samba OG</h3>
+              </div>
+            </article>
+            
+            <article class="product-card">
+              <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Nike Dunk Low sneakers" class="product-image">
+              <div class="product-info">
+                <p class="product-brand">Nike</p>
+                <h3 class="product-name">Dunk Low</h3>
+              </div>
+            </article>
+            
+            <article class="product-card">
+              <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Asics Japan S sneakers" class="product-image">
+              <div class="product-info">
+                <p class="product-brand">Asics</p>
+                <h3 class="product-name">Japan S</h3>
+              </div>
+            </article>
+          </div>
+          
+          <button class="slider-control" id="nextBtn" aria-label="Next products">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-label="Join our community">
+      <div class="section-container">
+        <h2 class="cta-title">Discover your next favorite pair</h2>
+        <button class="cta-button">Browse Collection</button>
+      </div>
+    </section>
+  </main>
+
+  <%- include('partials/_footer') %>
+
+  <script src="/js/about.js"></script>
+  <script src="/js/discover.js"></script>
+</body>
+</html>

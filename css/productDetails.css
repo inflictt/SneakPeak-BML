@@ -1,0 +1,407 @@
+/* Main Layout */
+.main-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Product Section */
+.product-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Product Info */
+.product-info {
+    padding: 20px;
+}
+
+.product-header {
+    margin-bottom: 30px;
+}
+
+.brand-name {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.product-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.product-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.price-section {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.price-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Size Selection */
+.size-section {
+    margin: 30px 0;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.size-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.size-option {
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.size-option:hover {
+    border-color: #000;
+}
+
+.size-option.selected {
+    border-color: #000;
+    background: #000;
+    color: white;
+}
+
+/* Vendor Selection */
+.vendors-section {
+    margin: 30px 0;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.vendors-section.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.retailer-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.retailer-card {
+    padding: 20px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.retailer-card:hover {
+    border-color: #000;
+}
+
+.retailer-card.selected {
+    border-color: #000;
+    background-color: #f8f8f8;
+}
+
+.retailer-card.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.retailer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.retailer-name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.retailer-price {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.verified-badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #0d9488;
+    font-size: 14px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.wishlist-btn {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+}
+
+.wishlist-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.add-to-cart-btn {
+    flex: 1;
+    padding: 15px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.add-to-cart-btn:hover:not(:disabled) {
+    background: #333;
+}
+
+/* Product Details */
+.shipping-info {
+    text-align: center;
+    color: #0d9488;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.details-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0 15px;
+}
+
+.details-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Selection Hints */
+.selection-hint {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background: #000;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .product-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .image-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Message Popup */
+.message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 4px;
+    background: #000;
+    color: white;
+    z-index: 1000;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(20px); }
+    15% { opacity: 1; transform: translateY(0); }
+    85% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= typeof title !== 'undefined' ?
+title : 'Create Account - SneakPeak' %></title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-card">
+            <div class="signup-header">
+                <h1 class="signup-title">Create Your</h1>
+                <div class="brand-name">SneakPeak Account</div>
+            </div>
+       
+     
+            <form class="signup-form">
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-input" placeholder="Enter your email" id="email">
+                </div>
+         
+       
+                <div class="form-group">
+                    <label class="form-label">Create Password</label>
+                    <input type="password" class="form-input" placeholder="Create a password" id="password">
+                    <div class="password-strength">
+       
+                 <div class="strength-bar">
+                            <div class="strength-fill" id="strengthFill"></div>
+                        </div>
+                        <span class="strength-text" id="strengthText">Weak</span>
+  
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Re-enter Password</label>
+           
+         <input type="password" class="form-input" placeholder="Re-enter your password" id="confirmPassword">
+                    <div class="password-match" id="passwordMatch">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M13 4L6 11L3 
+8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Passwords match
+                    </div>
+                </div>
+           
+     
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="terms">
+                        <span class="checkmark"></span>
+      
+                  I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                    </label>
+                </div>
+                
+                <button type="submit" class="signup-button">Create 
+Account</button>
+                
+                <div class="divider">
+                    <span>or Continue with:</span>
+                </div>
+                
+             
+   <div class="social-login">
+                    <button type="button" class="social-button google">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M16.5 9.20455C16.5 8.56636 16.4432 7.95273 16.3386 7.36364H9V10.845H13.1136C12.9205 11.97 12.2523 12.9232 11.2159 13.5614V15.8195H13.9773C15.7341 14.2523 
+16.5 11.9455 16.5 9.20455Z" fill="#4285F4"/>
+                            <path d="M9 17C11.43 17 13.4673 16.1941 14.9773 14.8182L12.2159 12.56C11.4114 13.1068 10.365 13.42 9 13.42C6.65591 13.42 4.67864 11.8373 3.96318 9.71H1.06455V12.0418C2.55273 14.9832 5.52273 17 9 17Z" fill="#34A853"/>
+                            <path d="M3.96318 9.71C3.78409 9.17 3.68182 8.59318 3.68182 8C3.68182 7.40682 3.78409 6.83 3.96318 6.29V3.95818H1.06455C0.388636 5.29273 0 6.80818 
+0 8.5C0 10.1918 0.388636 11.7073 1.06455 13.0418L3.96318 9.71Z" fill="#FBBC05"/>
+                            <path d="M9 2.57955C10.4477 2.57955 11.7341 3.03318 12.7568 3.92545L15.0341 1.64727C13.4636 0.226818 11.4259 -0.579545 9 0.238636C5.52273 0.238636 2.55273 2.25545 1.06455 4.95818L3.96318 7.29C4.67864 5.16273 6.65591 3.57955 9 3.57955V2.57955Z" fill="#EA4335"/>
+                        </svg>
+               
+         Continue with Google
+                    </button>
+                    
+                    <button type="button" class="social-button apple">
+                        <svg width="18" 
+height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M14.94 6.78C14.86 6.86 13.1 7.84 13.1 9.9C13.1 12.32 15.32 13.24 15.38 13.26C15.36 13.34 14.98 14.56 14.18 15.8C13.46 16.92 12.7 18.04 11.48 18.04C10.26 18.04 9.94 17.28 8.5 17.28C7.08 17.28 6.64 18 5.5 18C4.36 18 3.52 16.84 2.7 15.72C1.72 14.36 0.9 12.2 0.9 10.16C0.9 6.52 3.08 4.58 5.36 4.58C6.58 4.58 7.6 5.36 8.38 5.36C9.12 5.36 10.26 4.58 11.66 4.58C12.32 4.58 13.94 4.58 14.94 6.78ZM11.5 3.4C11.9 2.88 12.2 2.18 
+12.2 1.48C12.2 1.38 12.2 1.28 12.18 1.2C11.38 1.24 10.44 1.76 9.88 2.38C9.52 2.78 9.14 3.48 9.14 4.18C9.14 4.28 9.16 4.38 9.16 4.42C9.22 4.42 9.3 4.42 9.36 4.42C10.04 4.42 10.92 3.92 11.5 3.4Z" fill="currentColor"/>
+                        </svg>
+                        Continue with Apple
+                  
+  </button>
+                </div>
+                
+                <div class="login-cta">
+                    Already have an account?
+<a href="/login">Log in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/signup.js"></script>
+</body>
+</html>

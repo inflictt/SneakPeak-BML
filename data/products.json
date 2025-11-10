@@ -1,0 +1,147 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "brand": "Puma",
+      "name": "Palermo",
+      "subtitle": "Hyperlink Blue-Flame Flicker-Gum",
+      "price": 5249,
+      "originalPrice": 6999,
+      "images": [
+        "assets/images/img_palermo_side.png",
+        "assets/images/img_palermo_top.png",
+        "assets/images/img_palermo_rear.png",
+        "assets/images/img_palermo_rear_394x394.png",
+        "assets/images/img_palermo_rear_1.png",
+        "assets/images/img_palermo_diagonal.png",
+        "assets/images/img_palermo_rear_2.png",
+        "assets/images/img_palermo_rear_3.png"
+      ],
+      "sizes": [7, 8, 9, 10, 11],
+      "vendors": [
+        {
+          "name": "SoleTrade Mumbai",
+          "price": 5249,
+          "rating": 4.4,
+          "verified": true
+        },
+        {
+          "name": "Velocity Kicks",
+          "price": 5999,
+          "rating": 4.6,
+          "verified": true
+        },
+        {
+          "name": "StepUp Gurgaon",
+          "price": 6999,
+          "rating": 4.1,
+          "verified": true
+        }
+      ],
+      "details": {
+        "style": "402693_07",
+        "color": "Hyperlink Blue-Flame Flicker-Gum",
+        "material": "Suede & Leather",
+        "tongue": "Suede with mesh backing",
+        "lining": "Synthetic leather",
+        "sockliner": "Synthetic leather",
+        "fit": "Regular",
+        "heelType": "Flat",
+        "fastener": "Laces",
+        "toeType": "Rounded",
+        "profile": "Low Boot"
+      },
+      "description": "The Palermo brings back the timeless appeal of a terrace classic with a vintage silhouette and premium materials."
+    },
+    {
+      "id": 2,
+      "brand": "Adidas Originals",
+      "name": "Samba OG",
+      "subtitle": "Core Black Cloud White Gum",
+      "price": 8999,
+      "originalPrice": 10999,
+      "images": ["assets/images/img_rectangle_12_276x310.png"],
+      "sizes": [6, 7, 8, 9, 10, 11],
+      "vendors": [
+        {
+          "name": "SneakerHead Delhi",
+          "price": 8999,
+          "rating": 4.7,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "brand": "Nike",
+      "name": "Dunk Low",
+      "subtitle": "Panda Black White",
+      "price": 10999,
+      "originalPrice": 12999,
+      "images": ["assets/images/img_rectangle_12_1.png"],
+      "sizes": [7, 8, 9, 10, 11, 12],
+      "vendors": [
+        {
+          "name": "KicksCorner Bangalore",
+          "price": 10999,
+          "rating": 4.5,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "brand": "Asics",
+      "name": "Japan S",
+      "subtitle": "Pure White Minimalist",
+      "price": 7999,
+      "originalPrice": 9999,
+      "images": ["assets/images/img_rectangle_12_2.png"],
+      "sizes": [7, 8, 9, 10],
+      "vendors": [
+        {
+          "name": "TokyoSports Mumbai",
+          "price": 7999,
+          "rating": 4.3,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "brand": "Reebok",
+      "name": "FLOATZIG SYMMETROS",
+      "subtitle": "White  - orange ",
+      "price": 8999,
+      "originalPrice": 13999,
+      "images": ["assets/images/img_rectangle_12_3.png"],
+      "sizes": [7, 8, 9, 10],
+      "vendors": [
+        {
+          "name": "Inflcit Kicks",
+          "price": 8999,
+          "rating": 4.7,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "brand": "New Balance",
+      "name": "204L",
+      "subtitle": " White runners",
+      "price": 7999,
+      "originalPrice": 12999,
+      "images": ["assets/images/img_rectangle_12_4.png"],
+      "sizes": [7, 8, 9, 10],
+      "vendors": [
+        {
+          "name": "TokyoSports Mumbai",
+          "price": 7999,
+          "rating": 4.3,
+          "verified": true
+        }
+      ]
+    }
+  ]
+}
