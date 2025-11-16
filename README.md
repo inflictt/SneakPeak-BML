@@ -1,9 +1,3 @@
-Here is a `README.md` file for your project, "SneakPeak-Bml," based on the structure of the example you provided and the files from your project.
-
-You can copy and paste this directly into your `README.md` file.
-
------
-
 # SneakPeak-Bml – Full-Stack Sneaker Marketplace
 
 SneakPeak is a full-stack e-commerce application built with Node.js, Express, and MongoDB. The platform connects sneaker enthusiasts with verified local vendors, allowing users to compare prices, sizes, and sellers in one place.
