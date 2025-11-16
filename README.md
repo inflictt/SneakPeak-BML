@@ -20,7 +20,6 @@ SneakPeak is a full-stack e-commerce application built with Node.js, Express, an
 
 ## Project Structure
 
-```
 SneakPeak-Bml/
 ├── config/
 │   └── db.js                 # MongoDB connection logic
@@ -40,22 +39,21 @@ SneakPeak-Bml/
 │   └── seedProducts.js       # Script to seed database
 ├── views/
 │   ├── partials/
-│   │   ├── _footer.ejs
-│   │   └── _header.ejs
-│   ├── about.ejs
-│   ├── cart.ejs
-│   ├── discover.ejs
-│   ├── index.ejs
-│   ├── login.ejs
-│   ├── productDetails.ejs
-│   └── signup.ejs
+│   │   ├── _footer.ejs       # Reusable footer component
+│   │   └── _header.ejs       # Reusable header component
+│   ├── about.ejs             # About Us page
+│   ├── cart.ejs              # Shopping Cart page
+│   ├── discover.ejs          # Discover/Explore page
+│   ├── index.ejs             # Home page (Landing page)
+│   ├── login.ejs             # Login page
+│   ├── productDetails.ejs    # Single Product Details page
+│   └── signup.ejs            # Signup/Register page
 ├── css/                      # All frontend CSS files
 ├── js/                       # All frontend JavaScript files
 ├── server.js                 # Main Express server file
-├── package.json
-├── .gitignore
-└── README.md
-```
+├── package.json              # Project dependencies and scripts
+├── .gitignore                # Files/folders for Git to ignore
+└── README.md                 # Your project documentation
 
 ## How to Run the Project
 
